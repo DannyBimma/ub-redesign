@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Bookings</title>
+
+    <!-- Style Sheets -->
+    <link rel="stylesheet" href="bookings.css" />
+    <link rel="stylesheet" href="hamburger.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Scripts -->
+    
+  </head>
+
+  <body>
+   
+    <div class="menu-wrap">
+      <input type="checkbox" class="toggler" />
+      <div class="hamburger"><div></div></div>
+      <div class="menu">
+        <div>
+          <div>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="bookings.html">Bookings</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header class="hero_container">
+      <div class="hero_logo_container">
+        <img src="../media/logo-rosegold-vector.png" alt="Unblemished Beautii Logo" width="200" height="200">
+      </div>
+      <h1 class="hero_heading">Bookings</h1>
+      <p class="hero_intro">
+        Fill out all required* information in the form below to book an
+        appointment. And you will be contacted ASAP for confirmation or
+        rescheduling!
+      </p>
+    </header>
+
+    <form
+      action="mailto:dantrotman92@gmail.com"
+      method="POST"
+      enctype="multipart/form-data"
+      name="booking-form"
+      class="booking_form"
+    >
+      <label for="name">Full Name: *</label> <br />
+      <input type="text" id="name" name="client-name" />
+
+      <br />
+
+      <label for="email">Email Address: *</label> <br />
+      <input type="email" id="email" name="client-email" />
+
+      <br />
+
+      <label for="date">Preferred Date: *</label> <br />
+      <input
+        type="date"
+        id="date"
+        name="appointment-date"
+        min="2022-03-01"
+        max="2022-12-31"
+      />
+
+      <br />
+
+      <label for="service">Required Service:</label> <br />
+      <textarea
+        class="service_text_area"
+        name="client-service"
+        id="service"
+        cols="50"
+        rows="10"
+        placeholder="Let me know what service you would like to book an appointment for..."
+      ></textarea>
+
+      <br />
+
+      <button class="form_submit" type="submit">Request Booking</button>
+    </form>
+
+    <footer class="section section_four section_footer">
+      <p>&copy; Unblemished Beautii 2022. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
